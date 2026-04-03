@@ -29,19 +29,19 @@ const products = [
       { label: 'Diametro', value: '6 mm ENplus' },
       { label: 'Umidità', value: '< 10%' },
       { label: 'Ceneri', value: '< 0.7%' },
-      { label: 'Confezione', value: 'Sacchi 15kg / BigBag' },
+      { label: 'Confezione', value: 'Sacchi 15kg' },
     ],
   },
   {
     title: 'Legna da Ardere',
     subtitle: 'Stagionata e pronta all\'uso',
     image: '/images/legna.webp',
-    desc: 'Legna selezionata tra le migliori essenze locali — faggio, carpino, quercia — tagliata e stagionata per garantire la massima resa calorica e una fiamma pulita e duratura.',
+    desc: 'Legna selezionata tra le migliori essenze locali — faggio, carpino  — tagliata e stagionata per garantire la massima resa calorica e una fiamma pulita e duratura.',
     specs: [
       { label: 'Stagionatura', value: '12–24 mesi' },
-      { label: 'Essenze', value: 'Faggio, Carpino, Quercia' },
+      { label: 'Essenze', value: 'Faggio, Carpino' },
       { label: 'Pezzatura', value: '25 / 33 / 50 cm' },
-      { label: 'Fornitura', value: 'Bancali / Sfusa' },
+      { label: 'Fornitura', value: 'Sfusa' },
     ],
   },
 ]
