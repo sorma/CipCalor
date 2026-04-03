@@ -1,5 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-export default nextConfig
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
 
-import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
+if (process.env.NODE_ENV === 'development') {
+  await initOpenNextCloudflareForDev();
+}
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default nextConfig;
