@@ -49,7 +49,11 @@ export default function Contatti() {
 
         <div className={styles.stripItem}>
           <span className={styles.stripLabel}>Orari</span>
-          <p>Lun – Ven: 8:00 – 18:00<br />Sabato: su appuntamento</p>
+          <p>
+            Lun / Mer / Ven: 8:00 – 12:00 e 14:00 – 17:30<br />
+            Mar / Gio: 8:00 – 12:00<br />
+            Sabato: 8:00 – 12:00
+          </p>
         </div>
       </section>
 

@@ -105,7 +105,7 @@ export default function Footer() {
       </div>
 
       <div className={`${styles.bottom} container`}>
-        <p>
+        <p suppressHydrationWarning>
           © {new Date().getFullYear()} CipCalor — P.IVA 02948280132. Tutti i diritti riservati.
         </p>
       </div>
