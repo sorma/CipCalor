@@ -1,0 +1,357 @@
+.page {
+  padding-top: 116px;
+}
+
+/* ─────────────────────────────────────────
+   HERO
+───────────────────────────────────────── */
+.heroSection {
+  padding: 8px 110px 0;
+}
+
+.heroShell {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 34px;
+  background: linear-gradient(160deg, #183d1a 0%, #1d4a1f 42%, #234f25 100%);
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.10);
+}
+
+.heroInner {
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 56px 44px;
+}
+
+.heroContent {
+  max-width: 760px;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green-pale);
+  margin-bottom: 18px;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 5.2vw, 5.2rem);
+  color: var(--white);
+  margin-bottom: 18px;
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+}
+
+.heroText {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.02rem;
+  line-height: 1.8;
+  max-width: 620px;
+}
+
+/* ─────────────────────────────────────────
+   CERTIFICATI — 2 card orizzontali
+───────────────────────────────────────── */
+.certsWrap {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.certCard {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--cream-dark);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.certCard:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+/* Badge laterale verde con icona */
+.certBadge {
+  background: linear-gradient(160deg, #183d1a 0%, #234f25 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 32px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.certYear {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+/* Contenuto testuale */
+.certContent {
+  padding: 52px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.certTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+  background: color-mix(in srgb, var(--green-light, #4a8a28) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--green-light, #4a8a28) 25%, transparent);
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+.certContent h2 {
+  font-family: Georgia, serif;
+  font-size: 1.85rem;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.certNorma {
+  font-size: 0.82rem;
+  color: var(--text-mid);
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+}
+
+.certNorma strong {
+  color: var(--green-dark);
+}
+
+.certDesc {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.85;
+  max-width: 500px;
+  margin-bottom: 28px;
+}
+
+.certDownload {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--green-dark);
+  border: 1.5px solid var(--green-dark);
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.certDownload:hover {
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+/* ─────────────────────────────────────────
+   INFO — cos'è ENAMA
+───────────────────────────────────────── */
+.infoSection {
+  padding: 0 24px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.infoInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  background: var(--green-dark);
+  border-radius: var(--radius-lg);
+  padding: 64px 64px;
+}
+
+.infoTitle {
+  font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  color: var(--white);
+  margin-bottom: 24px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.infoText .label {
+  margin-bottom: 16px;
+}
+
+.infoDesc {
+  font-size: 0.93rem;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.infoFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.featureIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--green-pale, #a8d87a) 20%, transparent);
+  color: var(--green-pale, #a8d87a);
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────
+   CTA
+───────────────────────────────────────── */
+.cta {
+  padding: 0 24px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctaInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: var(--green-dark);
+  border-radius: var(--radius-lg);
+  padding: 48px 56px;
+}
+
+.ctaInner h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.ctaInner p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────
+   ANIMAZIONI
+───────────────────────────────────────── */
+@keyframes fadeUpSoft {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.heroShell,
+.certCard,
+.infoInner,
+.ctaInner {
+  opacity: 0;
+  animation: fadeUpSoft 1.05s ease-out forwards;
+  will-change: opacity, transform;
+}
+
+.heroShell                { animation-delay: 0.02s; }
+.certCard:nth-of-type(1)  { animation-delay: 0.14s; }
+.certCard:nth-of-type(2)  { animation-delay: 0.24s; }
+.infoInner                { animation-delay: 0.34s; }
+.ctaInner                 { animation-delay: 0.44s; }
+
+/* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .heroSection { padding: 8px 64px 0; }
+  .infoInner   { padding: 48px 48px; gap: 40px; }
+}
+
+@media (max-width: 900px) {
+  .page        { padding-top: 100px; }
+  .heroSection { padding: 10px 24px 0; }
+
+  .heroShell   { min-height: 360px; border-radius: 24px; }
+  .heroInner   { min-height: 360px; padding: 0 28px 30px; }
+  .heroContent { max-width: 100%; }
+  .heroTitle   { font-size: clamp(2.5rem, 9vw, 4.2rem); line-height: 0.96; }
+  .heroText    { font-size: 1rem; max-width: 100%; }
+
+  .certCard    { grid-template-columns: 1fr; }
+  .certBadge   { flex-direction: row; min-height: 100px; padding: 28px 32px; }
+  .certContent { padding: 36px 32px; }
+  .certDesc    { max-width: 100%; }
+
+  .infoInner   { grid-template-columns: 1fr; padding: 40px 36px; gap: 32px; }
+  .infoDesc    { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .ctaInner { flex-direction: column; align-items: flex-start; padding: 36px 32px; }
+}
+
+@media (max-width: 560px) {
+  .heroSection { padding: 8px 16px 0; }
+  .heroShell   { min-height: 320px; border-radius: 22px; }
+  .heroInner   { min-height: 320px; padding: 0 22px 24px; }
+  .heroTitle   { font-size: clamp(2.2rem, 12vw, 3.4rem); }
+  .infoInner   { padding: 32px 24px; border-radius: 18px; }
+}
+
+/* ─────────────────────────────────────────
+   REDUCED MOTION
+───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .heroShell, .certCard, .infoInner, .ctaInner {
+    opacity: 1;
+    animation: none;
+    transform: none;
+    transition: none;
+  }
+}

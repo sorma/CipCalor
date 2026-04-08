@@ -11,6 +11,7 @@ const links = [
   { href: '/servizi', label: 'Servizi' },
   { href: '/prodotti', label: 'Prodotti' },
   { href: '/mezzi', label: 'Mezzi' },
+  { href: '/certificazioni', label: 'Certificazioni' },
   { href: '/contatti', label: 'Contatti' },
 
 ]

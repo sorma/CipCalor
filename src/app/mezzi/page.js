@@ -93,7 +93,8 @@ export default function IMezzi() {
               Guarda il filmato<br />di cantiere
             </h2>
             <p className={styles.videoDesc}>
-I nostri mezzi in esposizione: un'occasione per scoprire da vicino le macchine con cui operiamo ogni giorno nel rispetto del bosco e dell'ambiente montano lombardo.
+              La cippatrice Heizohack al lavoro: guarda come trasformiamo il legname in cippato di qualità certificata, 
+              direttamente nel bosco lombardo.
             </p>
           </div>
 
