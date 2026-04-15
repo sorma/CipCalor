@@ -38,8 +38,8 @@ const products = [
     image: '/images/legna.webp',
     desc: 'Legna selezionata tra le migliori essenze locali — faggio, carpino  — tagliata e stagionata per garantire la massima resa calorica e una fiamma pulita e duratura.',
     specs: [
-      { label: 'Stagionatura', value: '12–24 mesi' },
-      { label: 'Essenze', value: 'Faggio, Carpino' },
+      { label: 'Stagionatura', value: 'Con essicatoio equivalmente 24 mesi' },
+      { label: 'Essenze', value: 'Faggio, Carpino, Frassino' },
       { label: 'Pezzatura', value: '25 / 33 / 50 cm' },
       { label: 'Fornitura', value: 'Sfusa' },
     ],
