@@ -91,7 +91,7 @@ export default function Home() {
               <h1 className={styles.heroTitle}>
                 Dal taglio
                 <br />
-                alla cippatura
+                alla cippatura e legna da ardere
               </h1>
 
               <p className={styles.heroText}>

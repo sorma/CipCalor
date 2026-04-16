@@ -121,7 +121,7 @@
   font-size: clamp(4rem, 6.9vw, 6.8rem);
   color: var(--white);
   margin-bottom: 22px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 0.92;
   letter-spacing: -0.045em;
 }
