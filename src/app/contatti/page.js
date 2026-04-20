@@ -52,7 +52,7 @@ export default function Contatti() {
           <p>
             Lun / Mer / Ven: 8:00 – 12:00 e 14:00 – 17:30<br />
             Mar / Gio: 8:00 – 12:00<br />
-            Sabato: 8:00 – 12:00
+            Sabato: chiuso
           </p>
         </div>
       </section>
