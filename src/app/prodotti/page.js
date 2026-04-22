@@ -40,7 +40,7 @@ const products = [
     specs: [
       { label: 'Stagionatura', value: 'Con essicatoio equivalmente 24 mesi' },
       { label: 'Essenze', value: 'Faggio, Carpino, Frassino' },
-      { label: 'Pezzatura', value: '25 / 33 / 50 cm' },
+      { label: 'Pezzatura', value: '30 / 40 cm' },
       { label: 'Fornitura', value: 'Sfusa' },
     ],
   },
