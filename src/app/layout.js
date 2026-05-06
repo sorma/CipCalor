@@ -3,10 +3,14 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata = {
+  metadataBase: new URL('https://www.cipcalor.it'),
   title: 'CipCalor',
   icons: {
     icon: 'images/logo.png',
     apple: 'images/logo.png',
+  },
+  alternates: {
+    canonical: '/',
   },
 }
 

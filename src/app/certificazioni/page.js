@@ -5,6 +5,9 @@ export const metadata = {
   title: 'Certificazioni – CipCalor',
   description:
     'CipCalor è certificata ENAMA Agroenergie per la produzione di cippato di legno (ISO 17225-4) e legna da ardere (ISO 17225-5). Qualità verificata da ente terzo accreditato ACCREDIA.',
+  alternates: {
+    canonical: '/certificazioni',
+  },
 }
 
 const certs = [

@@ -1,45 +1,56 @@
 // app/sitemap.js
 export default function sitemap() {
+  const baseUrl = 'https://www.cipcalor.it'
+  const lastModified = new Date()
+
   return [
     {
-      url: 'https://www.cipcalor.it',
-      lastModified: new Date(),
+      url: baseUrl,
+      lastModified,
+      changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://www.cipcalor.it/servizi',
-      lastModified: new Date(),
+      url: `${baseUrl}/servizi`,
+      lastModified,
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://www.cipcalor.it/prodotti',
-      lastModified: new Date(),
+      url: `${baseUrl}/prodotti`,
+      lastModified,
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://www.cipcalor.it/mezzi',
-      lastModified: new Date(),
+      url: `${baseUrl}/mezzi`,
+      lastModified,
+      changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: 'https://www.cipcalor.it/certificazioni',
-      lastModified: new Date(),
+      url: `${baseUrl}/certificazioni`,
+      lastModified,
+      changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: 'https://www.cipcalor.it/contatti',
-      lastModified: new Date(),
+      url: `${baseUrl}/contatti`,
+      lastModified,
+      changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: 'https://www.cipcalor.it/privacy-policy',
-      lastModified: new Date(),
-      priority: 0.4,
+      url: `${baseUrl}/privacy-policy`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
     {
-      url: 'https://www.cipcalor.it/termini-e-condizioni',
-      lastModified: new Date(),
-      priority: 0.4,
+      url: `${baseUrl}/termini-e-condizioni`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ]
 }

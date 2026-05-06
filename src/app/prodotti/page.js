@@ -5,6 +5,9 @@ import styles from './page.module.css'
 export const metadata = {
   title: 'Prodotti – CipCalor',
   description: 'Cippato, pellet e legna da ardere. Filiera locale, consegna diretta in provincia di Como.',
+  alternates: {
+    canonical: '/prodotti',
+  },
 }
 
 const products = [

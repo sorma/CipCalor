@@ -3,6 +3,9 @@ import styles from './page.module.css'
 export const metadata = {
   title: 'Contatti – CipCalor',
   description: 'Contatta CipCalor per cippato, pellet e legna da ardere in provincia di Como.',
+    alternates: {
+    canonical: '/contatti',
+  },
 }
 
 export default function Contatti() {

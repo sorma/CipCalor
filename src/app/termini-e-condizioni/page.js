@@ -4,6 +4,9 @@ export const metadata = {
   title: 'Termini e Condizioni | CipCalor',
   description:
     'Termini e condizioni generali di vendita e utilizzo del sito CipCalor.',
+      alternates: {
+    canonical: '/termini-e-condizioni',
+  },
 }
 
 const LAST_UPDATE = '30 marzo 2026'

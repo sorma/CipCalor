@@ -4,6 +4,9 @@ import styles from './page.module.css'
 export const metadata = {
   title: 'Servizi – CipCalor',
   description: 'Taglio boschivo, cippatura e gestione forestale sostenibile in provincia di Como.',
+    alternates: {
+    canonical: '/servizi',
+  },
 }
 
 const services = [

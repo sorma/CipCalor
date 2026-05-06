@@ -5,6 +5,9 @@ import styles from './page.module.css'
 export const metadata = {
   title: 'Home – CipCalor',
   description: 'CipCalor: azienda agricola forestale con oltre trent\'anni di esperienza. Offriamo cippato, pellet e legna da ardere con filiera locale e consegna diretta in provincia di Como.',
+    alternates: {
+    canonical: '/',
+  },
 }
 
 const stats = [

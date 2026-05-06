@@ -4,6 +4,9 @@ export const metadata = {
   title: 'Privacy Policy | CipCalor',
   description:
     'Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) – CipCalor.',
+      alternates: {
+    canonical: '/privacy-policy',
+  },
 }
 
 const LAST_UPDATE = '30 marzo 2026'
