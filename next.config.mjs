@@ -15,6 +15,16 @@ const nextConfig = {
         destination: 'https://www.cipcalor.it/:path*',
         permanent: true,
       },
+      // Vecchie pagine
+      { source: '/lasnigo-e-mail', destination: '/contatti', permanent: true },
+      { source: '/lasnigo-e-mail/:path*', destination: '/contatti', permanent: true },
+      { source: '/news', destination: '/', permanent: true },
+      { source: '/news/:path*', destination: '/', permanent: true },
+      { source: '/i-nostri-mezzi', destination: '/mezzi', permanent: true },
+      { source: '/i-nostri-mezzi/:path*', destination: '/mezzi', permanent: true },
+      { source: '/chi-siamo', destination: '/', permanent: true },
+      { source: '/produzione', destination: '/prodotti', permanent: true },
+      { source: '/le-nostre-attivita', destination: '/servizi', permanent: true },
     ]
   },
 };
