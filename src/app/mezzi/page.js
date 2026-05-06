@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 
 export const metadata = {
-  title: 'I Nostri Mezzi – CipCalor',
+  title: 'Mezzi – CipCalor',
   description: 'Scopri la flotta di macchinari CipCalor: mezzi forestali professionali per il taglio, la cippatura e il trasporto del legname in provincia di Como.',
 }
 
