@@ -9,12 +9,7 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'cipcalor.it' }],
-        destination: 'https://www.cipcalor.it/:path*',
-        permanent: true,
-      },
+
       // Vecchie pagine
       { source: '/lasnigo-e-mail', destination: '/contatti', permanent: true },
       { source: '/lasnigo-e-mail/:path*', destination: '/contatti', permanent: true },
