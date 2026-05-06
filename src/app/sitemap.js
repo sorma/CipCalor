@@ -31,5 +31,15 @@ export default function sitemap() {
       lastModified: new Date(),
       priority: 0.6,
     },
+    {
+      url: 'https://www.cipcalor.it/privacy-policy',
+      lastModified: new Date(),
+      priority: 0.4,
+    },
+    {
+      url: 'https://www.cipcalor.it/termini-e-condizioni',
+      lastModified: new Date(),
+      priority: 0.4,
+    },
   ]
 }
