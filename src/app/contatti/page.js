@@ -19,7 +19,7 @@ export default function Contatti() {
               <span className={styles.label}>Contatti</span>
               <h1 className={styles.heroTitle}>Parlaci del tuo progetto</h1>
               <p className={styles.heroText}>
-                Siamo operativi dal lunedì al venerdì. Rispondiamo con rapidità.
+                Siamo a disposizione per informazioni e preventivi.
               </p>
             </div>
           </div>
@@ -53,9 +53,7 @@ export default function Contatti() {
         <div className={styles.stripItem}>
           <span className={styles.stripLabel}>Orari</span>
           <p>
-            Lun / Mar / Mer / Gio / Ven: 8:00 – 12:00 <br />
-            Sabato: chiuso<br />
-            Domenica: chiuso
+            Dal 10 al 26 agosto compresi siamo chiusi per ferie.
           </p>
         </div>
       </section>
