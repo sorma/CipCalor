@@ -53,7 +53,8 @@ export default function Contatti() {
         <div className={styles.stripItem}>
           <span className={styles.stripLabel}>Orari</span>
           <p>
-            Dal 10 al 26 agosto compresi siamo chiusi per ferie.
+            Lunedì, mercoledì, venerdì: 8:00 – 12:00 e 14:00 – 17:30<br />
+            Martedì e giovedì: 8:00 – 12:00
           </p>
         </div>
       </section>
