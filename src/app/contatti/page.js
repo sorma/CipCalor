@@ -3,7 +3,7 @@ import styles from './page.module.css'
 export const metadata = {
   title: 'Contatti – CipCalor',
   description: 'Contatta CipCalor per cippato, pellet e legna da ardere in provincia di Como.',
-    alternates: {
+  alternates: {
     canonical: '/contatti',
   },
 }
@@ -29,7 +29,7 @@ export default function Contatti() {
       <section className={styles.main}>
         <a href="tel:031951099" className={styles.bigCard}>
           <span className={styles.bigCardLabel}>Chiamaci</span>
-          <strong className={styles.bigCardValue}>031 951099</strong>
+          <strong className={styles.bigCardValue}>333 290 6074</strong>
           <span className={styles.bigCardSub}>Telefono</span>
           <span className={styles.bigCardArrow}>→</span>
         </a>
