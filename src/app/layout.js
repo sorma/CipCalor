@@ -6,8 +6,8 @@ export const metadata = {
   metadataBase: new URL('https://www.cipcalor.it'),
   title: 'CipCalor',
   icons: {
-    icon: 'images/logo.png',
-    apple: 'images/logo.png',
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
   },
   alternates: {
     canonical: '/',

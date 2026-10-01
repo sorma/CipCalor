@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Navbar.module.css'
 import { Menu, X, Phone } from 'lucide-react'
+import { company } from '@/lib/company'
 
 const links = [
   { href: '/', label: 'Home' },
@@ -18,7 +19,6 @@ const links = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const [showPhone, setShowPhone] = useState(false)
 
   const closeMenu = () => setIsOpen(false)
 
@@ -56,21 +56,21 @@ export default function Navbar() {
           </nav>
 
           <div className={styles.rightArea}>
-            <button
-              type="button"
+            <a
+              href={company.phoneHref}
               className={styles.callButton}
-              onClick={() => setShowPhone((prev) => !prev)}
-              aria-label={showPhone ? 'Nascondi numero' : 'Mostra numero'}
+              aria-label={`Chiama ${company.phone}`}
             >
               <Phone size={18} />
-              <span>{showPhone ? '031 951099' : 'Chiama ora'}</span>
-            </button>
+              <span>Chiama ora</span>
+            </a>
 
             <button
               className={styles.toggle}
               onClick={() => setIsOpen((prev) => !prev)}
               aria-label={isOpen ? 'Chiudi menu' : 'Apri menu'}
               aria-expanded={isOpen}
+              aria-controls="mobile-menu"
               type="button"
             >
               {isOpen ? <X size={22} /> : <Menu size={22} />}
@@ -79,15 +79,16 @@ export default function Navbar() {
         </div>
       </header>
 
-      <div className={`${styles.mobilePanel} ${isOpen ? styles.mobilePanelOpen : ''}`}>
-        <button
-          type="button"
+      <nav id="mobile-menu" aria-label="Navigazione mobile" className={`${styles.mobilePanel} ${isOpen ? styles.mobilePanelOpen : ''}`}>
+        <a
+          href={company.phoneHref}
           className={styles.mobileCallButton}
-          onClick={() => setShowPhone((prev) => !prev)}
+          onClick={closeMenu}
+          aria-label={`Chiama ${company.phone}`}
         >
           <Phone size={18} />
-          <span>{showPhone ? '031 951099' : 'Chiama ora'}</span>
-        </button>
+          <span>Chiama {company.phone}</span>
+        </a>
 
         {links.map((link) => (
           <Link
@@ -99,7 +100,7 @@ export default function Navbar() {
             {link.label}
           </Link>
         ))}
-      </div>
+      </nav>
 
       {isOpen && (
         <button

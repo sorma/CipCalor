@@ -1,3 +1,4 @@
+import { company } from '@/lib/company'
 import styles from './privacy-policy.module.css'
 
 export const metadata = {
@@ -9,11 +10,11 @@ export const metadata = {
   },
 }
 
-const LAST_UPDATE = '30 marzo 2026'
+const LAST_UPDATE = '1 ottobre 2026'
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className={styles.page}>
+    <div className={styles.page}>
       <div className={styles.container}>
         <header className={styles.hero}>
           <p className={styles.eyebrow}>Documento legale</p>
@@ -34,24 +35,23 @@ export default function PrivacyPolicyPage() {
             </p>
             <address className={styles.addressBox}>
               <strong>Azienda Agricola CipCalor</strong><br />
-              Via Provinciale snc<br />
-              22030 Lasnigo (CO) – Italia<br />
+              {company.street}<br />
+              {company.locality} – Italia<br />
               P.IVA: 02948280132<br />
-              Tel: <a href="tel:031951099">031 951099</a><br />
-              E-mail: <a href="mailto:cipcalor@geroli.it">cipcalor@geroli.it</a>
+              Tel: <a href={company.phoneHref}>{company.phone}</a><br />
+              E-mail: <a href={company.emailHref}>{company.email}</a>
             </address>
           </section>
 
           <section>
             <h2>2. Dati Raccolti</h2>
             <p>
-              Il sito raccoglie le seguenti categorie di dati personali, esclusivamente
-              quando l&apos;utente li fornisce volontariamente:
+              I dati forniti volontariamente per le richieste di contatto sono distinti
+              dai dati tecnici raccolti automaticamente durante la navigazione:
             </p>
             <ul>
-              <li><strong>Dati di contatto</strong> – nome, cognome, indirizzo e-mail, numero di telefono, trasmessi tramite modulo di contatto o e-mail diretta.</li>
+              <li><strong>Dati di contatto</strong> – dati comunicati volontariamente via e-mail o telefono per richieste di informazioni e preventivi. Il sito non contiene un modulo di contatto.</li>
               <li><strong>Dati di navigazione</strong> – indirizzo IP, tipo di browser, sistema operativo, pagine visitate e orari di accesso, raccolti automaticamente dai log del server.</li>
-              <li><strong>Cookie tecnici</strong> – necessari al corretto funzionamento del sito.</li>
             </ul>
             <p>
               Non vengono raccolti dati sensibili ai sensi dell&apos;art. 9 GDPR né dati di minori di 16 anni.
@@ -80,10 +80,6 @@ export default function PrivacyPolicyPage() {
                   <tr>
                     <td>Adempimento di obblighi legali, fiscali e contabili</td>
                     <td>Obbligo legale (art. 6.1.c GDPR)</td>
-                  </tr>
-                  <tr>
-                    <td>Analisi statistica anonima delle visite</td>
-                    <td>Legittimo interesse (art. 6.1.f GDPR)</td>
                   </tr>
                   <tr>
                     <td>Comunicazioni commerciali</td>
@@ -127,13 +123,14 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2>7. Cookie</h2>
             <p>
-              Il sito utilizza esclusivamente cookie tecnici necessari al suo funzionamento.
-              Non vengono installati cookie di profilazione senza previo consenso.
+              Il codice del sito non imposta cookie di sessione, di preferenza o di profilazione
+              e non integra strumenti pubblicitari o di analisi delle visite.
             </p>
-            <ul>
-              <li><strong>Cookie di sessione</strong> – temporanei, eliminati alla chiusura del browser.</li>
-              <li><strong>Cookie di preferenza</strong> – memorizzano eventuali impostazioni di navigazione.</li>
-            </ul>
+            <p>
+              Il servizio di hosting e protezione Cloudflare può utilizzare strumenti tecnici
+              di sicurezza in base alla configurazione del servizio. I collegamenti a siti
+              esterni, come Google Maps, sono soggetti alle informative dei rispettivi gestori.
+            </p>
           </section>
 
           <section>
@@ -151,7 +148,7 @@ export default function PrivacyPolicyPage() {
             <p>Ai sensi degli artt. 15–22 GDPR, l&apos;utente ha diritto di accesso, rettifica, cancellazione, limitazione, portabilità, opposizione e revoca del consenso.</p>
             <p>
               Per esercitare tali diritti è possibile scrivere a{' '}
-              <a href="mailto:cipcalor@geroli.it">cipcalor@geroli.it</a>.
+              <a href={company.emailHref}>{company.email}</a>.
             </p>
             <p>
               È inoltre possibile presentare reclamo al{' '}
@@ -170,6 +167,6 @@ export default function PrivacyPolicyPage() {
           </section>
         </article>
       </div>
-    </main>
+    </div>
   )
 }

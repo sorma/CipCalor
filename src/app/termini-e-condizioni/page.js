@@ -1,3 +1,4 @@
+import { company } from '@/lib/company'
 import styles from './termini-e-condizioni.module.css'
 
 export const metadata = {
@@ -9,11 +10,11 @@ export const metadata = {
   },
 }
 
-const LAST_UPDATE = '30 marzo 2026'
+const LAST_UPDATE = '1 ottobre 2026'
 
 export default function TerminiCondizioniPage() {
   return (
-    <main className={styles.page}>
+    <div className={styles.page}>
       <div className={styles.container}>
         <header className={styles.hero}>
           <p className={styles.eyebrow}>Documento legale</p>
@@ -41,10 +42,10 @@ export default function TerminiCondizioniPage() {
             <h2>2. Informazioni sull&apos;Azienda</h2>
             <address className={styles.addressBox}>
               <strong>Azienda Agricola CipCalor</strong><br />
-              Via Provinciale snc – 22030 Lasnigo (CO) – Italia<br />
+              {company.street} – {company.locality} – Italia<br />
               P.IVA: 02948280132<br />
-              Tel: <a href="tel:031951099">031 951099</a><br />
-              E-mail: <a href="mailto:cipcalor@geroli.it">cipcalor@geroli.it</a>
+              Tel: <a href={company.phoneHref}>{company.phone}</a><br />
+              E-mail: <a href={company.emailHref}>{company.email}</a>
             </address>
           </section>
 
@@ -68,9 +69,8 @@ export default function TerminiCondizioniPage() {
             </p>
             <p>Gli ordini possono essere effettuati:</p>
             <ul>
-              <li>telefonicamente al numero <a href="tel:031951099">031 951099</a>;</li>
-              <li>via e-mail a <a href="mailto:cipcalor@geroli.it">cipcalor@geroli.it</a>;</li>
-              <li>tramite eventuale modulo contatti presente sul sito.</li>
+              <li>telefonicamente al numero <a href={company.phoneHref}>{company.phone}</a>;</li>
+              <li>via e-mail a <a href={company.emailHref}>{company.email}</a>;</li>
             </ul>
             <p>
               L&apos;ordine si considera confermato solo dopo conferma espressa da parte di CipCalor.
@@ -141,9 +141,10 @@ export default function TerminiCondizioniPage() {
               Per ogni controversia sarà competente il Foro di Como, salvo i casi in cui la legge preveda una tutela diversa per il consumatore.
             </p>
             <p>
-              Per i consumatori dell&apos;Unione Europea è disponibile anche la piattaforma ODR:{' '}
-              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">
-                ec.europa.eu/consumers/odr
+              Informazioni sugli organismi di risoluzione alternativa delle controversie
+              sono disponibili sul portale della Commissione europea:{' '}
+              <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies" target="_blank" rel="noopener noreferrer">
+                Consumer Redress in the EU
               </a>
             </p>
           </section>
@@ -156,6 +157,6 @@ export default function TerminiCondizioniPage() {
           </section>
         </article>
       </div>
-    </main>
+    </div>
   )
 }

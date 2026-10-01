@@ -1,3 +1,4 @@
+import { company } from '@/lib/company'
 import styles from './page.module.css'
 
 export const metadata = {
@@ -27,16 +28,16 @@ export default function Contatti() {
       </section>
 
       <section className={styles.main}>
-        <a href="tel:031951099" className={styles.bigCard}>
+        <a href={company.phoneHref} className={styles.bigCard}>
           <span className={styles.bigCardLabel}>Chiamaci</span>
-          <strong className={styles.bigCardValue}>333 290 6074</strong>
+          <strong className={styles.bigCardValue}>{company.phone}</strong>
           <span className={styles.bigCardSub}>Telefono</span>
           <span className={styles.bigCardArrow}>→</span>
         </a>
 
-        <a href="mailto:cipcalor@geroli.it" className={styles.bigCard}>
+        <a href={company.emailHref} className={styles.bigCard}>
           <span className={styles.bigCardLabel}>Scrivici</span>
-          <strong className={styles.bigCardValue}>cipcalor@geroli.it</strong>
+          <strong className={styles.bigCardValue}>{company.email}</strong>
           <span className={styles.bigCardSub}>Email aziendale</span>
           <span className={styles.bigCardArrow}>→</span>
         </a>
@@ -45,7 +46,7 @@ export default function Contatti() {
       <section className={`${styles.strip} container`}>
         <div className={styles.stripItem}>
           <span className={styles.stripLabel}>Sede</span>
-          <p>Via Provinciale snc<br />22030 Lasnigo (CO)</p>
+          <p>{company.street}<br />{company.locality}</p>
         </div>
 
         <div className={styles.stripDivider} />
@@ -68,7 +69,7 @@ export default function Contatti() {
         >
           <div>
             <span className={styles.mapsLabel}>Sede operativa</span>
-            <strong>CipCalor — Via Provinciale snc, 22030 Lasnigo (CO)</strong>
+            <strong>CipCalor — {company.street}, {company.locality}</strong>
           </div>
           <span className={styles.mapsLink}>Apri in Google Maps →</span>
         </a>

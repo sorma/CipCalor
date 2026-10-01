@@ -1,3 +1,4 @@
+import { company } from '@/lib/company'
 import Link from 'next/link'
 import styles from './Footer.module.css'
 
@@ -30,7 +31,7 @@ export default function Footer() {
           </p>
 
           <div className={styles.socials}>
-            <a href="mailto:cipcalor@geroli.it" className={styles.pill}>
+            <a href={company.emailHref} className={styles.pill}>
               <svg
                 className={styles.icon}
                 width="16"
@@ -50,7 +51,7 @@ export default function Footer() {
               <span>Email</span>
             </a>
 
-            <a href="tel:031951099" className={styles.pill}>
+            <a href={company.phoneHref} className={styles.pill}>
               <svg
                 className={`${styles.icon} ${styles.phoneIcon}`}
                 width="16"
@@ -84,11 +85,11 @@ export default function Footer() {
         <div className={styles.col}>
           <h4>Contatti</h4>
           <address>
-            <p>Via Provinciale snc</p>
-            <p>22030 Lasnigo (CO)</p>
-            <p>Tel: 031 951099</p>
+            <p>{company.street}</p>
+            <p>{company.locality}</p>
+            <p>Tel: {company.phone}</p>
             <p>
-              <a href="mailto:cipcalor@geroli.it">cipcalor@geroli.it</a>
+              <a href={company.emailHref}>{company.email}</a>
             </p>
           </address>
         </div>
